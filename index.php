@@ -90,22 +90,22 @@ $movieTwo = new Movie('Qui rido io','Drammatico',133,'9 settembre 2021',"Eduardo
         <section>
             <h1>Primo film</h1>
             <div>
-                <h2>Titolo: </h2>
-                <p>Genere: </p>
-                <p>Durata:    minuti</p>
-                <h5>Data di uscita </h5>
-                <p>Trama: </p>
+                <h2>Titolo:<?php echo $movieOne->getTitle() ?></h2>
+                <p>Genere: <?php echo $movieOne->getGenre() ?></p>
+                <p>Durata: <?php echo $movieOne->getDuration() ?>   minuti</p>
+                <h5>Data di uscita <?php echo $movieOne->getReleaseDate() ?></h5>
+                <p>Trama: <?php echo $movieOne->getDescription() ?></p>
             </div>
         </section>
         
         <section>
             <h1>Secondo film</h1>
             <div>
-            <h2>Titolo: </h2>
-                <p>Genere: </p>
-                <p>Durata:    minuti</p>
-                <h5>Data di uscita </h5>
-                <p>Trama: </p>
+            <h2>Titolo: <?= $movieTwo->getTitle() ?> </h2>
+                <p>Genere: <?= $movieTwo->getGenre() ?></p>
+                <p>Durata: <?= $movieTwo->getDuration() ?>   minuti</p>
+                <h5>Data di uscita <?= $movieTwo->getReleaseDate() ?></h5>
+                <p>Trama: <?= $movieTwo->getDescription() ?></p>
             </div>
         </section>
         
