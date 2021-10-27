@@ -25,6 +25,35 @@ class Movie {
        $this->releaseDate = $releaseDate;
        $this->description = $description;
     }
+
+    /**
+     * Get title of Movie class
+     *
+     * @return string
+     */
+    public function getTitle(){
+        return $this->title;
+    }
+
+    /**
+     * Get genre of Movie class
+     *
+     * @return string
+     */
+    public function getGenre(){
+        return $this->genre;
+    }
+
+    /**
+     * Get duration of Movie class
+     *
+     * @return integer
+     */
+    public function getDuration(){
+        return $this->duration;
+    }
+
+
 }
 
 
